@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* shared style */
+  main{
+   max-width: 1440px;
+   margin: 0 auto;
+  }
+  main >section{
+   margin-top: 130px;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .dark-1{
+   color: #131313;
+  }
+  .color-grey{
+    color: #424242;
+  }
+  .color-grey-2{
+   color: #727272;
+  }
+  .color-3{
+   color: rgba(255, 144, 14, 1);
+  }
+  .btn{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+  }
+  /* header  style*/
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav-item{
+    list-style: none;
+    margin-right: 30px;
+ }
+ .brand{
+    font-weight: 700;
+    font-size: 3rem;
+ }
+ .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    
+ }
+ .bg-c{
+    background-color: rgba(255, 144, 14, 0.1);
+ }
+ .nav-bar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+ .banner-content{
+    max-width: 850px;
+    margin: 0 auto ;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ .banner-h{
+    font-weight: 700;
+    font-size: 4rem;
+ }
+ .banner-img{
+    max-width: 100%;
+ }
+ .team-img{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+   
+ }
+ .teams{
+   align-items: center;
+ }
+ .our-features{
+   max-width: 540px;
+   margin-left: 130px;
+ }
+ .features-h{
+   font-size: 2.8rem;
+   font-weight: 700;
+ }
+ #quick{
+   font-weight: 400;
+ }
+.features-p{
+   font-size: 1rem;
+   font-weight: 400;
+   margin-bottom: 50px;
+}
+.card{
+   display: flex;
+}
+.box-h2{
+   font-size: 2.8rem;
+   font-weight: 700;
+}
+#box-head{
+   border-left: 5px solid #FF900E;
+   padding-left: 20px;
+}
+.card-main{
+   max-width: 580px;
+   margin-right: 146px;
+}
+.box-p{
+   font-size: 1rem;
+   font-weight: 400;
+}
+.box-h{
+   font-size: 1.25rem;
+   font-weight: 700;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+.box-card{
+   padding: 30px ;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
+}
+.btn-10{
+   font-size: 4rem;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 1);
+}
+.btn-11{
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+.img-box img{
+   width: 100%;
+}
+#btn-exp{
+   padding: 45px 42px;
+   margin-left: -100px;
+   margin-top: -100px;
+}
+
+
+.facts-f{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+.facts-d{
+   border: 1px solid gold;
+   width: 240px;
+   height: 240px;
+   border-radius: 8px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+.number{
+   font-size: 2.8rem;
+   font-weight: 500;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+.facts-h{
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.spon{
+   max-width: 540px;
+   margin: 50px auto;
+}
+.spon-h{
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   text-align: center;
+}
+.spon-img{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+}
+.spon-img img{
+   filter: grayscale(100%);
+}
+
+
+.foot{
+   max-width: 1000px;
+   padding: 40px 300px;
+   background-color: rgba(255, 244, 231, 1);
+   border-radius: 8px;
+   margin-top: 100px;
+   text-align: center;
+   margin: 100px auto;
+}
+ @media screen and (max-width:576px) {
+   .nav-bar, 
+   .nav-links,
+   .card, 
+   .teams{
+      flex-direction: column;
+   }
+   .facts-f,
+   .spon-img{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      justify-items: center;
+   }
+   
+   
+   .team-img{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .our-features{
+      margin-left: 20px;
+   }
+   #btn-exp{
+      margin-left: 20px;
+      margin-top: 20px;
+   }
+ }
+
+ @media screen and (min-width:576px) and (max-width:992px) {
+
+   .teams, .card{
+      flex-direction: column;
+   }
+   .our-features{
+      margin: 50px auto;
+   }
+   #btn-exp{
+      margin-top: 20px;
+      margin-left: 200px;
+   }
+   .facts-f, .spon-img{
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 30px;
+   }
+ }
